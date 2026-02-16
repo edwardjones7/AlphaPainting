@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Painting | Premium Contracting Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-brush">
+        <div class="brush-handle"></div>
+        <div class="brush-bristles"></div>
+      </div>
+      <div class="loader-stroke"></div>
+      <p class="loader-text">Alpha Painting</p>
+    </div>
+  </div>
+
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-alpha">ALPHA</span>
+        <span class="logo-painting">PAINTING</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img class="hero-bg-img" src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1600&h=900&fit=crop&q=80" alt="" aria-hidden="true" />
+      <div class="hero-gradient"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Trusted by 500+ Homeowners
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line reveal-up" style="--delay: 0.1s">Transform Your Space</span>
+        <span class="title-line title-accent reveal-up" style="--delay: 0.2s">With Expert</span>
+        <span class="title-line reveal-up" style="--delay: 0.3s">
+          <span class="title-highlight">Craftsmanship</span>
+        </span>
+      </h1>
+      <p class="hero-subtitle reveal-up" style="--delay: 0.4s">
+        Premium painting and contracting services that bring your vision to life.
+        Quality finishes, meticulous detail, lasting impressions.
+      </p>
+      <div class="hero-actions reveal-up" style="--delay: 0.5s">
+        <a href="#contact" class="btn btn-primary">
+          <span>Start Your Project</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#portfolio" class="btn btn-outline">
+          <span>View Our Work</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up" style="--delay: 0.6s">
+        <div class="stat">
+          <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span><span class="stat-percent">%</span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main reveal-left">
+            <img src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=700&h=525&fit=crop&q=80" alt="Professional painter rolling paint on interior wall" loading="lazy" />
+          </div>
+          <div class="about-img-accent reveal-left" style="--delay: 0.2s">
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=500&h=375&fit=crop&q=80" alt="Close-up of fresh paint and color swatches" loading="lazy" />
+          </div>
+          <div class="about-experience-badge">
+            <span class="exp-number">15+</span>
+            <span class="exp-text">Years of<br/>Excellence</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal-up">About Us</div>
+          <h2 class="section-title reveal-up" style="--delay: 0.1s">
+            Painting Excellence,<br/>
+            <span class="text-accent">One Stroke at a Time</span>
+          </h2>
+          <p class="about-text reveal-up" style="--delay: 0.2s">
+            At Alpha Painting, we believe every surface tells a story. Founded with a passion for 
+            perfection, our team of skilled craftsmen transforms ordinary spaces into extraordinary 
+            environments. We combine traditional techniques with modern innovation to deliver 
+            results that exceed expectations.
+          </p>
+          <p class="about-text reveal-up" style="--delay: 0.3s">
+            From residential homes to commercial properties, we bring the same level of dedication 
+            and attention to detail to every project. Our commitment to using premium materials 
+            and sustainable practices ensures a finish that stands the test of time.
+          </p>
+          <div class="about-features reveal-up" style="--delay: 0.4s">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Licensed & Insured</strong>
+                <p>Fully licensed with comprehensive insurance coverage</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Eco-Friendly Paints</strong>
+                <p>Low-VOC and environmentally responsible materials</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Free Estimates</strong>
+                <p>Transparent pricing with no hidden fees or surprises</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Our Services</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          Comprehensive Painting<br/>
+          <span class="text-accent">& Contracting Solutions</span>
+        </h2>
+        <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+          From interior makeovers to full exterior transformations, we deliver premium results tailored to your vision.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Interior Painting</h3>
+          <p class="service-desc">
+            Transform your living spaces with flawless finishes. From accent walls to full-room makeovers, we create atmospheres that inspire.
+          </p>
+          <ul class="service-list">
+            <li>Wall & ceiling painting</li>
+            <li>Cabinet refinishing</li>
+            <li>Trim & molding</li>
+            <li>Color consultation</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="service-card featured reveal-up" style="--delay: 0.2s">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="18" rx="2"/>
+              <path d="M2 9h20"/>
+              <path d="M10 3v6"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Exterior Painting</h3>
+          <p class="service-desc">
+            Boost your curb appeal with professional exterior painting. Weather-resistant finishes that protect and beautify your property.
+          </p>
+          <ul class="service-list">
+            <li>House painting</li>
+            <li>Deck & fence staining</li>
+            <li>Power washing</li>
+            <li>Surface preparation</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 20h20"/>
+              <path d="M5 20V8l7-5 7 5v12"/>
+              <rect x="9" y="12" width="6" height="8"/>
+              <path d="M9 12h6"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Commercial Services</h3>
+          <p class="service-desc">
+            Professional painting solutions for offices, retail, and industrial spaces. Minimal disruption, maximum impact.
+          </p>
+          <ul class="service-list">
+            <li>Office spaces</li>
+            <li>Retail environments</li>
+            <li>Industrial coatings</li>
+            <li>Maintenance programs</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.15s">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3v18"/>
+              <path d="M3 12h18"/>
+              <circle cx="12" cy="12" r="9"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Drywall Repair</h3>
+          <p class="service-desc">
+            Seamless drywall patching, texturing, and finishing. We restore your walls to pristine condition before any paint is applied.
+          </p>
+          <ul class="service-list">
+            <li>Hole patching</li>
+            <li>Crack repair</li>
+            <li>Texture matching</li>
+            <li>Skim coating</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.25s">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 22l1-1h3l9-9"/>
+              <path d="M15 2l7 7-1.5 1.5-7-7z"/>
+              <path d="M13 6l2-2 7 7-2 2"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Specialty Finishes</h3>
+          <p class="service-desc">
+            Elevate your interiors with unique decorative finishes. Faux textures, metallic accents, and custom murals that captivate.
+          </p>
+          <ul class="service-list">
+            <li>Faux finishes</li>
+            <li>Metallic & pearl coats</li>
+            <li>Wallpaper installation</li>
+            <li>Custom murals</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.35s">
+          <div class="service-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Color Consulting</h3>
+          <p class="service-desc">
+            Not sure what colors to choose? Our expert color consultants help you find the perfect palette for your style and space.
+          </p>
+          <ul class="service-list">
+            <li>On-site consultation</li>
+            <li>Digital color previews</li>
+            <li>Trend guidance</li>
+            <li>Sample testing</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">How It Works</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          Our Simple<br/>
+          <span class="text-accent">4-Step Process</span>
+        </h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal-up" style="--delay: 0.1s">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Free Consultation</h3>
+            <p>We visit your property, discuss your vision, and provide a detailed, no-obligation estimate.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.2s">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Color Selection</h3>
+            <p>Our experts help you choose the perfect colors and finishes to match your style and space.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.3s">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Expert Execution</h3>
+            <p>Our skilled team prepares and paints with precision, keeping your space clean throughout.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" style="--delay: 0.4s">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Final Walkthrough</h3>
+            <p>We do a thorough inspection with you to ensure every detail meets our high standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Our Work</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          Featured<br/>
+          <span class="text-accent">Projects</span>
+        </h2>
+        <p class="section-subtitle reveal-up" style="--delay: 0.2s">
+          Browse our portfolio of stunning transformations and see what Alpha Painting can do for you.
+        </p>
+      </div>
+      <div class="portfolio-filter reveal-up" style="--delay: 0.3s">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="exterior">Exterior</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item reveal-up" data-category="interior" style="--delay: 0.1s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=600&h=450&fit=crop&q=80" alt="Modern living room with fresh paint" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Interior</span>
+                <h3>Modern Living Room</h3>
+                <p>Complete color transformation with accent wall</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="exterior" style="--delay: 0.15s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=450&fit=crop&q=80" alt="Beautiful exterior home paint job" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Exterior</span>
+                <h3>Victorian Home</h3>
+                <p>Full exterior repaint with trim detail</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="commercial" style="--delay: 0.2s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=450&fit=crop&q=80" alt="Modern painted office space" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Commercial</span>
+                <h3>Downtown Office</h3>
+                <p>Modern workspace painting & finish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="interior" style="--delay: 0.25s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&h=450&fit=crop&q=80" alt="Elegant bedroom with calming paint colors" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Interior</span>
+                <h3>Master Bedroom Suite</h3>
+                <p>Calming palette with specialty finish</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="exterior" style="--delay: 0.3s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=450&fit=crop&q=80" alt="Craftsman bungalow with fresh exterior paint" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Exterior</span>
+                <h3>Craftsman Bungalow</h3>
+                <p>Historic restoration with period colors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal-up" data-category="commercial" style="--delay: 0.35s">
+          <div class="portfolio-card">
+            <div class="portfolio-img">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=450&fit=crop&q=80" alt="Boutique restaurant interior with warm paint tones" loading="lazy" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-category">Commercial</span>
+                <h3>Boutique Restaurant</h3>
+                <p>Warm, inviting atmosphere with custom murals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label reveal-up">Testimonials</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          What Our Clients<br/>
+          <span class="text-accent">Are Saying</span>
+        </h2>
+      </div>
+      <div class="testimonials-slider reveal-up" style="--delay: 0.2s">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"Alpha Painting transformed our entire home. The attention to detail was incredible — every edge, every corner was perfect. They were professional, clean, and finished ahead of schedule. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div>
+                <strong>Sarah Mitchell</strong>
+                <span>Homeowner, Oakwood Heights</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"We hired Alpha Painting for our restaurant renovation and the results blew us away. The custom mural they created is now the centerpiece of our dining room. Their team was creative, flexible, and a joy to work with."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JR</div>
+              <div>
+                <strong>James Rodriguez</strong>
+                <span>Owner, The Copper Table</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"The exterior of our Victorian home needed serious love, and Alpha Painting delivered beyond our expectations. They matched the historical colors perfectly and the craftsmanship is evident in every brushstroke."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EW</div>
+              <div>
+                <strong>Emily Watson</strong>
+                <span>Homeowner, Heritage District</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="testimonial-text">"As a property manager, I've worked with many painters. Alpha Painting stands out for their consistency, reliability, and professionalism. They handle all 12 of our buildings and the quality never wavers."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DK</div>
+              <div>
+                <strong>David Kim</strong>
+                <span>Property Manager, Pinnacle Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-nav">
+          <button class="test-nav-btn" id="testPrev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <div class="test-dots" id="testDots"></div>
+          <button class="test-nav-btn" id="testNext" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-bg">
+      <div class="cta-shapes">
+        <div class="cta-shape"></div>
+        <div class="cta-shape"></div>
+        <div class="cta-shape"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title reveal-up">Ready to Transform<br/>Your Space?</h2>
+        <p class="cta-text reveal-up" style="--delay: 0.1s">
+          Get a free, no-obligation estimate today. Let's discuss your project and bring your vision to life.
+        </p>
+        <div class="cta-actions reveal-up" style="--delay: 0.2s">
+          <a href="#contact" class="btn btn-white">
+            <span>Get Free Estimate</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="tel:+15551234567" class="btn btn-white-outline">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>(555) 123-4567</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label reveal-up">Get In Touch</div>
+          <h2 class="section-title reveal-up" style="--delay: 0.1s">
+            Let's Start Your<br/>
+            <span class="text-accent">Next Project</span>
+          </h2>
+          <p class="contact-text reveal-up" style="--delay: 0.2s">
+            Ready to get started? Fill out the form and we'll get back to you within 24 hours with a detailed estimate.
+          </p>
+          <div class="contact-details reveal-up" style="--delay: 0.3s">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+15551234567">(555) 123-4567</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@alphapainting.com">info@alphapainting.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <span>Serving the Greater Metro Area</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Hours</strong>
+                <span>Mon - Fri: 7AM - 6PM<br/>Sat: 8AM - 2PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="interior">Interior Painting</option>
+                <option value="exterior">Exterior Painting</option>
+                <option value="commercial">Commercial Services</option>
+                <option value="drywall">Drywall Repair</option>
+                <option value="specialty">Specialty Finishes</option>
+                <option value="consulting">Color Consulting</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe your project, timeline, and any specific requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13"/>
+                <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-alpha">ALPHA</span>
+            <span class="logo-painting">PAINTING</span>
+          </a>
+          <p>Premium painting and contracting services. Transforming spaces with expert craftsmanship since 2010.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Interior Painting</a></li>
+            <li><a href="#services">Exterior Painting</a></li>
+            <li><a href="#services">Commercial Services</a></li>
+            <li><a href="#services">Drywall Repair</a></li>
+            <li><a href="#services">Specialty Finishes</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:info@alphapainting.com">info@alphapainting.com</a></li>
+            <li>Greater Metro Area</li>
+            <li>Mon-Fri: 7AM - 6PM</li>
+            <li>Sat: 8AM - 2PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alpha Painting. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
